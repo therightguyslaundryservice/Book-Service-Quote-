@@ -12,7 +12,7 @@
         <h2 style="text-align: center; color: var(--dark-blue); margin-top: 0;">Schedule Service (Must Be 24 Hours In Advance)</h2>
         <p style="text-align: center; margin-bottom: 30px; color: #636e72;">All fields are mandatory to ensure accurate scheduling.</p>
         
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="laundry-form">
+        <form action="https://formspree.io/f/mzdkqoro" method="POST" id="laundry-form">
             <div style="display: grid; gap: 20px;">
                 
                 <div style="display: grid; gap: 15px;">
@@ -42,7 +42,7 @@
                             <label style="display: block; font-weight: 600;">Drop Off Address *</label>
                             <div style="display: flex; align-items: center; gap: 5px;">
                                 <input type="checkbox" id="sameAddress" style="cursor: pointer;">
-                                <label for="sameAddress" style="font-size: 0.8rem; cursor: pointer; color: #636e72;">Check Box If Same as Pick Up</label>
+                                <label for="sameAddress" style="font-size: 0.8rem; cursor: pointer; color: #636e72;">Same as Pick Up</label>
                             </div>
                         </div>
                         <input type="text" id="dropoffAddress" name="Drop_Off_Address" required placeholder="Street, Apartment, Borough" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; margin-top: 5px;">
@@ -152,7 +152,7 @@
                 <div style="display: flex; align-items: flex-start; gap: 10px; padding: 10px 0;">
                     <input type="checkbox" id="policyAgreement" name="Policy_Agreement" required style="margin-top: 5px; cursor: pointer;">
                     <label for="policyAgreement" style="font-size: 0.85rem; color: #636e72; line-height: 1.5; cursor: pointer;">
-                        I agree to provide the requested information for service fulfillment. I understand that my data is protected and used solely for scheduling and communicating about my order. <strong>Standard services must be booked at least 24 hours in advance. I agree to receive updates on the status of service by text (data rates may apply) or email. </strong> By checking this box, I acknowledge and accept these terms.
+                        I agree to provide the requested information for service fulfillment. I understand that my data is protected and used solely for scheduling and communicating about my order. <strong>Standard services must be booked at least 24 hours in advance.</strong> By checking this box, I acknowledge and accept these terms.
                     </label>
                 </div>
 
@@ -266,5 +266,5 @@
         setMinimumDate();
         calculatePrice();
     };
-    </script>
-    
+                                </script>
+                                
