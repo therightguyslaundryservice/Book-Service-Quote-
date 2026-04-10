@@ -5,14 +5,19 @@
             <img src="logo.jpg" alt="The Right Guys Logo" style="max-width: 250px; height: auto;">
         </div>
 
-        <div style="background: var(--primary-blue); color: white; padding: 15px; border-radius: 15px; text-align: center; margin-bottom: 25px;">
+        <div style="background: var(--primary-blue); color: white; padding: 15px; border-radius: 15px; text-align: center; margin-bottom: 15px;">
             <strong style="font-size: 1rem; letter-spacing: 0.5px;">PICK UP & DROP OFF FEE: $25.00 | WASH & FOLD: $2.50/LB</strong>
+        </div>
+
+        <div style="background: #fff3cd; color: #856404; padding: 15px; border-radius: 10px; border: 1px solid #ffeeba; text-align: center; margin-bottom: 25px; font-size: 0.9rem; line-height: 1.5;">
+            <strong>Hours of Operation: 9:00 AM - 6:00 PM EST</strong><br>
+            Please note: Drop off may take up to 24 hours or more from the pick up date and time, but we try our best to meet your requested drop off time.
         </div>
 
         <h2 style="text-align: center; color: var(--dark-blue); margin-top: 0;">Schedule One Time Service (Must Be 24 Hours In Advance, Cash Only At Pick Up.)</h2>
         <p style="text-align: center; margin-bottom: 30px; color: #636e72;">All fields are mandatory to ensure accurate scheduling.</p>
         
-        <form action="https://formspree.io/f/mzdkqoro" method="POST" id="laundry-form">
+        <form action="https://formspree.io/f/mzdkqoro" method="POST" id="laundry-form" enctype="multipart/form-data">
             <div style="display: grid; gap: 20px;">
                 
                 <div style="display: grid; gap: 15px;">
@@ -73,7 +78,6 @@
                             <label style="display: block; font-size: 0.85rem; font-weight: 600;">Time (EST) *</label>
                             <select name="Pickup_Time" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; background: white;">
                                 <option value="">Select Time</option>
-                                <option value="8am-9am">8:00 AM - 9:00 AM</option>
                                 <option value="9am-10am">9:00 AM - 10:00 AM</option>
                                 <option value="10am-11am">10:00 AM - 11:00 AM</option>
                                 <option value="11am-12pm">11:00 AM - 12:00 PM</option>
@@ -82,6 +86,7 @@
                                 <option value="2pm-3pm">2:00 PM - 3:00 PM</option>
                                 <option value="3pm-4pm">3:00 PM - 4:00 PM</option>
                                 <option value="4pm-5pm">4:00 PM - 5:00 PM</option>
+                                <option value="5pm-6pm">5:00 PM - 6:00 PM</option>
                             </select>
                         </div>
                     </div>
@@ -96,7 +101,6 @@
                             <label style="display: block; font-size: 0.85rem; font-weight: 600;">Time (EST) *</label>
                             <select name="Dropoff_Time" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; background: white;">
                                 <option value="">Select Time</option>
-                                <option value="8am-9am">8:00 AM - 9:00 AM</option>
                                 <option value="9am-10am">9:00 AM - 10:00 AM</option>
                                 <option value="10am-11am">10:00 AM - 11:00 AM</option>
                                 <option value="11am-12pm">11:00 AM - 12:00 PM</option>
@@ -105,6 +109,7 @@
                                 <option value="2pm-3pm">2:00 PM - 3:00 PM</option>
                                 <option value="3pm-4pm">3:00 PM - 4:00 PM</option>
                                 <option value="4pm-5pm">4:00 PM - 5:00 PM</option>
+                                <option value="5pm-6pm">5:00 PM - 6:00 PM</option>
                             </select>
                         </div>
                     </div>
@@ -136,6 +141,33 @@
                 <div>
                     <label style="display: block; font-weight: 600;">Special Instructions *</label>
                     <textarea name="Special_Instructions" required placeholder="Tell us about delicate items, detergents, or specific folding needs..." style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; height: 80px;"></textarea>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 10px 0;">
+
+                <div style="background: #fdfbf7; padding: 15px; border-radius: 8px; border: 1px solid #f1e5bc;">
+                    <h4 style="margin: 0 0 5px 0; color: var(--dark-blue);">Item Verification Photos (Mandatory)</h4>
+                    <p style="font-size: 0.85rem; color: #d63031; margin-top: 0; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
+                        * To protect both parties, please upload 4 photos of your items before bagging. All photos must be clear and show all items.
+                    </p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 600;">Photo 1 *</label>
+                            <input type="file" name="Verification_Photo_1" accept="image/*" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; background: white;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 600;">Photo 2 *</label>
+                            <input type="file" name="Verification_Photo_2" accept="image/*" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; background: white;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 600;">Photo 3 *</label>
+                            <input type="file" name="Verification_Photo_3" accept="image/*" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; background: white;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 600;">Photo 4 *</label>
+                            <input type="file" name="Verification_Photo_4" accept="image/*" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; background: white;">
+                        </div>
+                    </div>
                 </div>
 
                 <div style="background: var(--soft-blue); padding: 25px; border-radius: 15px; border: 2px dashed var(--primary-blue); text-align: center; margin-top: 10px;">
